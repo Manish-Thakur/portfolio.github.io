@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html>
+<title>Work IN Progress</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body{
+	font-family: GT America;
+}
+
+nav{font: normal 16px GT America;}
+
+#fav{
+  padding-left: 8px;
+  padding-top: 7px;
+  width: 45px;
+  height: 45px;
+}
+
+.image {
+  float: left;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+  opacity: 0.3;
+}
+
+#img{
+	width: 80%;
+	height: 80%;
+	padding-top: 5%; 
+	padding-left: 230px;
+	padding-right: 20px;
+
+}
+
+
+
+
+@media(max-width:800px){
+
+	#img{
+	width: 100%;
+	height: 70%;
+	padding-top: 150px; 
+	padding-left: 10%;
+	padding-right: 10%;
+
+}
+
+
+	}
+</style>
+<body>
+
+  <!--Navbar-->
+<div class="container">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                     <img id="fav" class="image" src="img/Favicon.png">
+              </div> 
+  
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="w3-center"><a href="index.html">HOME</a></li>
+                    <li class="w3-center"><a href="About.html">ABOUT</a></li> 
+                    <li class="w3-center"><a href="Contact.html">CONTACT</a></li>  
+                  </ul><ul class="nav navbar-nav navbar-right">
+                    <li class="w3-center"><a href="myPortfolio.html">PORTFOLIO</a></li>
+                    <li class="w3-center"><a href="Blog.html">BLOG</a></li>  
+                  </ul>
+              </div>
+    </div>
+  </nav>
+</div>
+<!--EndNavbar-->
+
+<img id="img" src="img/wrk.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
