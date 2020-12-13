@@ -118,8 +118,8 @@ footer{
 	margin-top: 20px;
 }
 
-#Prev{}
-#Next{content: ' \003E';content: ' \003E';}
+#Prev:after{content: ' \00AB';}
+#Next:after{content: ' \00BB';}
 
 
 /*responsive */
