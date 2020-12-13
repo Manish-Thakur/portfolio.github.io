@@ -118,6 +118,9 @@ footer{
 	margin-top: 20px;
 }
 
+#Prev{}
+#Next{content: ' \003E';content: ' \003E';}
+
 
 /*responsive */
 
