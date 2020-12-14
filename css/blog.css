@@ -118,7 +118,7 @@ footer{
 	margin-top: 20px;
 }
 
-#Prev:after{content: ' \00AB';}
+#Prev:before{content: ' \00AB';}
 #Next:after{content: ' \00BB';}
 
 
