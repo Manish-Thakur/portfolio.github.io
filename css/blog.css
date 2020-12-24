@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 *,body{
   font-family: GT America;
  
@@ -206,7 +211,5 @@ footer{
   padding-left: 8px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
