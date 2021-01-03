@@ -95,6 +95,7 @@
       /*padding: 20px;*/
       background-color: #ffffff;
     margin-top:20px;
+      padding: 30px;
   }
   
   .card img{
@@ -127,7 +128,7 @@
   @media(max-width:800px){
       .left-column,.right-column{
       width: 100%;
-      padding: 25px;
+      padding: 30px;
   
       }
   
