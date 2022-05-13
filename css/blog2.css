@@ -1,0 +1,215 @@
+*,body{
+    font-family: GT America;
+   
+  }
+  
+  body{
+      
+      margin:0;
+      padding:20px;
+      background-color: #f1f1f1;
+  }
+  
+  p{
+        font-family: "Kavivanar", cursive;
+  
+  }
+  
+  nav{font: normal 16px GT America;}
+  
+  .image {
+    float: left;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .image:hover {
+    opacity: 0.3;
+  }
+  
+  #image1 {
+  
+    opacity: 1;
+    width: 70px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  
+  }
+  
+  
+  
+  #image1:hover {
+    opacity: 0.01;
+  }
+  #fav{
+    padding-left: 8px;
+    padding-top: 7px;
+    width: 45px;
+    height: 45px;
+  }
+  *{
+      box-sizing: border-box;
+  }
+  .row:after{
+      content: '';
+      display: table;
+      clear: both;
+  }
+  header{
+      background-color: #ffffff;
+      padding:30px;
+  
+  }
+  header h1{
+      text-align: center;
+      font-size:60px;
+      color:#000000;
+      margin:1.5 0px;
+  }
+  
+  h2{
+      color:#000000;
+  margin:1.5 0px;	
+  }
+  .left-column{
+  float: left;
+  width: 75%;	
+  padding-left: 30px;
+  padding-right: 20px;
+  text-align: justify;
+  padding-top: 40px;
+  }
+  
+  .right-column{
+   width: 22%;
+   float: right;
+   padding-right:30px;
+   padding-top: 40px;
+   text-align: justify;
+  }
+  .card{
+      /*padding: 20px;*/
+      background-color: #ffffff;
+    margin-top:20px;
+  
+  }
+  
+  .card img{
+      width: 100%;
+  }
+  
+  
+  .right-column .card img{
+      margin-bottom: 10px;
+  }
+  
+  .left-column .card img{
+      height: 400px;
+  }
+  
+  
+  footer{
+      background-color: #dddddd;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  #Prev:before{content: ' \00AB';}
+  #Next:after{content: ' \00BB';}
+  
+  
+  /*responsive */
+  
+  @media(max-width:800px){
+      .left-column,.right-column{
+      width: 100%;
+      padding: 30px;
+  
+      }
+  
+  
+    .right-column {
+      padding-top: 0px;
+      
+    }
+  
+   
+  }
+  
+  .accordion {
+    background-color: white; /*#eee*/
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+  
+    opacity: 0.7;
+    color: red; /*#ccc*/
+  
+  }
+  
+  .accordion:after{
+   
+    /*content: '\002B';*/
+    /*color: white; #777*/
+    font-weight: bold
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after{
+    
+    float:right;
+    content: "\2612";
+  }
+  
+  .panel {
+    
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+    padding-bottom: 0px;
+  }
+  
+  #startup{
+   
+    width:50%;
+    height: 50%;
+    padding-top: 30px;
+    margin-left: 30%;
+  
+  }
+  
+  #footer{
+    color: black;
+  }
+  
+  
+  #title{
+  
+    border-left: 2px solid red;
+    border-left-width: 3px;
+    border-collapse: 0.5px;
+    padding-left: 8px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  

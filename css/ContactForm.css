@@ -1,0 +1,270 @@
+body{
+	font-family: GT America;
+	margin:0;
+	padding:60px;
+	background-color: *#ffffff;/*#f1f1f1;*/  /*#ffffe6;*//* #ffffcc;*/ /*#ffe6e6;*/ 
+
+}
+
+nav{font: normal 16px GT America;}
+/*#intro{
+  font-family: GT America;
+  letter-spacing: 1px;
+  border-bottom: 1px solid red;
+  position: absolute;
+  padding-top: 0px;
+}*/
+
+#name{padding-left: 1px;}
+
+.navbar{font: normal 16px GT America;
+        /*padding-top: 5px;*/ 
+
+}
+
+
+
+/*.sidenav {
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 30px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+*/
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+  opacity: 0.3;
+}
+
+#fav{
+
+ 
+  padding-left: 8px;
+  padding-top: 7px;
+  width: 45px;
+  height: 40px;
+}
+
+/*#image1 {
+
+  opacity: 1;
+  width: 70px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+*/
+/*#image1:hover {
+  opacity: 0.01;
+}*/
+
+
+*{
+	box-sizing: border-box;
+}
+
+.row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+
+.left-column{
+/*position: fixed;*/
+float: left;
+width: 50%;	
+padding-top: 40px;
+padding-left: 30px;
+padding-right: 30px;
+text-align: justify;
+}
+
+.right-column{
+ width: 50%;
+ float: right;
+ padding-top: 40px;
+ padding-right:30px;
+ text-align: justify;
+
+}
+
+
+
+p{
+      font-family: "Kavivanar", cursive;
+
+}
+
+
+#top{
+  
+  font-size: 50px;
+  
+  text-transform: uppercase;
+}
+#para{padding-left: 17.5px; font-size: 13.3px;}
+#sec{color: #006600;}
+#follow{padding-top: 20px;}
+
+h2{text-transform: uppercase;}
+
+.card {
+	
+	background-color: #b3b3b3;/*#d9d9d9;*//*gray;*//**#ffffff;*/ /*#ffffe6;*//*#ffffcc;*/ /*#ffe6e6;*/ 
+  margin-top:20px;
+}
+
+.card img{
+	width: 100%;
+}
+
+
+.right-column .card p,a{
+	margin-bottom: 10px;
+  padding-right: 50px;
+  margin-left: 2%;
+  padding-bottom: 10px;
+}
+
+/*.left-column .card img{
+	height: 300px;
+}*/
+
+
+footer{
+	background-color: white; /*#dddddd;*/ /*#ffffe6;*//*#ffffcc;*/ /*#ffe6e6;*/ 
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*responsive */
+
+@media(max-width:800px){
+
+
+  #para{text-align: justify; font-size: 14.39px; }
+
+	.left-column,.right-column{
+    width: 100%;
+    /*padding: 50px;*/
+    position: relative;
+  }
+
+    .form1{font-size: 25px; }
+    #form2{font-size: 25px; padding-left: 25px;}
+    #submit{margin-left: 30%;}
+    #footer{padding-left: 65px;padding-top: 20px;}
+    #footer1{padding-left: 65px; letter-spacing: none; padding-top: 20px;padding-bottom: 30px;}
+    #foot{padding-left: 32.8px; padding-right: 45px;}
+
+    .left-column{
+
+      padding: 5px;
+
+
+    }
+
+    .right-column{
+      padding: 5px;
+      /*margin-bottom: 40%;*/
+      /*padding-bottom: 80px;*/
+
+    }
+
+   
+
+    /*#intro{text-align: center; position: absolute; left: 33.5%;}*/
+
+
+/*    
+
+  .left-column .card img{
+    border-radius: 5px;}*/
+
+  .right-column .card{margin-top: 5px;}
+
+}
+
+ 
+
+
+
+form{
+  font-family: "Kavivanar", cursive;
+  width: 100%;
+  min-height: 65px;
+  margin: 10px 0;
+  margin-left: 5%;
+ /* margin-bottom: 5px;*/
+
+  
+}
+.form1{margin-left: 5%;padding-top: 20px;}
+#form2{margin-left: 5%;padding-top: 20px;}
+#footer1{margin-left: 5%;letter-spacing: 2px;}
+#footer{margin-left: 3%; letter-spacing: 5px;}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+  #subject{width: 90%;}
+
+
+  form textarea {
+  border: 1px solid #fff;
+  padding: 15px 5px;
+  /*margin-left: 5px;*/
+  outline: none;
+  border-radius: 2px;
+  width: 90%;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+  form input:focus,
+  form textarea:focus {
+  border-color: #4ca1af;
+  outline: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125),
+    0 0 8px rgba(76, 161, 175, 0.5);
+}
+
