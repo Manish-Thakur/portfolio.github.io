@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<title>Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: GT America;}
+
+
+body{
+  padding-top: 50px;
+}
+
+nav{font: normal 16px GT America;}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+  opacity: 0.3;
+}
+
+#fav{
+  padding-left: 8px;
+  padding-top: 7px;
+  width: 45px;
+  height: 45px;
+}
+
+#footer{
+  color: black;
+}
+/*----------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+ /* font-family: Arial;*/
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+h2{border-left: 2.5px solid red; padding-left: 7px;}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+#ext{
+  height: 205px;
+}
+
+#calen{display: none;}
+
+@media(max-width:800px){
+
+  #ext{height: 67px;}
+  #date{display: none;}
+  #date2{display: none;}
+  #calen{display:inline;}
+  
+
+
+  .tz-gallery {
+    padding: 10px;
+}
+
+ }
+</style>
+
+<body class="w3-light-grey">
+
+  <!--Navbar-->
+<div class="container">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                     <a href="index.html"><img id="fav" class="image" src="img/Favicon.png"></a>
+              </div> 
+  
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="w3-center"><a href="index.html">HOME</a></li>
+                  <li class="w3-center"><a href="about.html">ABOUT</a></li> 
+                  <li class="w3-center"><a href="contact.html">CONTACT</a></li>  
+                </ul><ul class="nav navbar-nav">
+                  <li class="w3-center"><a href="myPortfolio.html">PROJECTS</a></li>
+                  <li class="w3-center"><a href="blog.html">BLOGS</a></li>
+                  <li class="w3-center"><a href="myCV.html">RESUME</a></li>
+                  <li class="w3-center"><a href="WorkInProgress.html">RELEASES</a></li>     
+                </ul>
+            </div>
+    </div>
+  </nav>
+</div>
+  <!--End of Navbar-->>
+
+  <!-- MAIN (Center website) -->
+<div class="main">
+
+<!-- <h1>MYLOGO.COM</h1>
+<hr> --><br>
+
+<h2>MY PHOTOGRAPHY</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('trips')"> Trips</button>
+  <!-- <button class="btn" onclick="filterSelection('people')"> Festivals</button> -->
+  <button class="btn" onclick="filterSelection('cuisine')"> Cuisine</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="tz-gallery">
+
+<div class="row">
+  
+        <div class="column nature">
+          <div class="content">
+            <a class="lightbox" href="img/phys.jpg" >
+              <img src="img/phys.jpg" alt="Nature" style="width:100%" id="ext">
+            </a>
+            <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Gokarna Beach -</span> 12/02/2017
+          </div>
+        </div>
+  
+
+  <div class="column nature">
+    <div class="content">
+      <a class="lightbox" href="img/phy2.jpg">
+            <img src="img/phy2.jpg" alt="Nature" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Jog Falls -</span> 05/10/2016
+    </div>
+  </div>
+
+
+  <div class="column nature">
+    <div class="content">
+      <a class="lightbox" href="img/phy3.jpg">
+            <img src="img/phy3.jpg" alt="Nature" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Madivala Lake -</span> 10/12/2018
+    </div>
+  </div>
+  
+
+  <div class="column nature">
+    <div class="content">
+      <a class="lightbox" href="img/phy4.jpg">
+            <img src="img/phy4.jpg" alt="Nature" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Dandali -</span> 06/02/2017
+    </div>
+  </div>
+
+
+  <div class="column trips">
+    <div class="content">
+      <a class="lightbox" href="img/taj6.jpg">
+            <img src="img/taj6.jpg" alt="Trips" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Chennai Beach -</span> 08/05/2019
+    </div>
+  </div>
+
+
+  <div class="column trips">
+    <div class="content">
+      <a class="lightbox" href="img/metro.jpg">
+            <img src="img/metro.jpg" alt="Trips" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Hyderabad Metro -</span> 10/06/2019
+    </div>
+  </div>
+
+
+  <div class="column nature">
+    <div class="content">
+      <a class="lightbox" href="img/IMG_2367.jpg">
+            <img src="img/IMG_2367.jpg" alt="Nature" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Chennai Beach -</span> 08/05/2019
+    </div>
+  </div>
+  
+  <div class="column trips">
+    <div class="content">
+      <a class="lightbox" href="img/bij.jpg">
+            <img src="img/bij.jpg" alt="Trips" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Bijapur Fort -</span> 08/05/2018
+    </div>
+  </div>
+
+
+  <div class="column trips">
+    <div class="content">
+      <a class="lightbox" href="img/phy6.jpg">
+            <img src="img/phy6.jpg" alt="Trips" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Bijapur Fort -</span> 08/05/2018
+    </div>
+  </div>
+
+
+
+
+  <div class="column nature">
+    <div class="content">
+      <a class="lightbox" href="img/nat.jpg">
+            <img src="img/nat.jpg" alt="Nature" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Madivala Lake -</span> 10/12/2018
+    </div>
+  </div>
+
+
+
+  <div class="column trips">
+    <div class="content">
+      <a class="lightbox" href="img/ind.jpg">
+            <img src="img/ind.jpg" alt="Trips" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Howrah Bridge -</span> 11/01/2015
+    </div>
+  </div>
+
+
+
+  <div class="column trips">
+    <div class="content">
+      <a class="lightbox" href="img/ind2.jpg">
+            <img src="img/ind2.jpg" alt="Trips" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Golgumbaz Fort -</span> 05/12/2018
+    </div>
+  </div>
+
+
+
+  <div class="column animals">
+    <div class="content">
+      <a class="lightbox" href="img/ban.jpg">
+            <img src="img/ban.jpg" alt="Animals" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Bannerghatta Park -</span> 05/12/2018
+    </div>
+  </div>
+
+
+
+  <div class="column animals">
+    <div class="content">
+      <a class="lightbox" href="img/ban2.jpg">
+            <img src="img/ban2.jpg" alt="Animals" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Bannerghatta Park -</span> 05/12/2018
+    </div>
+  </div>
+
+
+
+  <div class="column animals">
+    <div class="content">
+      <a class="lightbox" href="img/ban3.jpg">
+            <img src="img/ban3.jpg" alt="Animals" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Bijapur -</span> 12/02/2018
+    </div>
+  </div>
+
+  <div class="column cuisine">
+    <div class="content">
+      <a class="lightbox" href="img/cus.jpg">
+            <img src="img/cus.jpg" alt="Cuisine" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Lollipop -</span> 10/02/2019
+    </div>
+  </div>
+
+  <div class="column cuisine">
+    <div class="content">
+      <a class="lightbox" href="img/cus1.jpg">
+            <img src="img/cus1.jpg" alt="Cuisine" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Wow Momos -</span> 12/02/2018
+    </div>
+  </div>
+
+  <div class="column cuisine">
+    <div class="content">
+      <a class="lightbox" href="img/cus2.jpg">
+            <img src="img/cus2.jpg" alt="Cuisine" style="width:100%" id="ext">
+      </a>
+       <span id="calen"><i class="fa fa-calendar" aria-hidden="true"></span></i> <span id="date2"><i class="fa fa-map-marker" aria-hidden="true" id="date2"></i>   Veg Biryani -</span> 07/04/2020
+    </div>
+  </div>
+
+
+
+<!-- END GRID -->
+</div>
+</div><!--Tz-gallery-->
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
