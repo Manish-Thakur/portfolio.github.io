@@ -1,2 +1,2 @@
-# myPortfolio
-a responsive professional portfolio
+# MyPortfolio
+A responsive professional portfolio.
