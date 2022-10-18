@@ -58,6 +58,9 @@ nav{font: normal 16px GT America;}
   height: 40px;
 }
 
+#top{
+  padding-top: 15px;
+}
 /*#image1 {
 
   opacity: 1;
