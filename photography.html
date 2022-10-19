@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Photography</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script>
+    $(function(){
+      $('#header').load('header.html');
+    });
+</script>
+</head>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: GT America;}
 
@@ -177,7 +187,8 @@ h2{border-left: 2.5px solid red; padding-left: 7px;}
 <body class="w3-light-grey">
 
   <!--Navbar-->
-<div class="container">
+  <div id="header"></div>
+<!-- <div class="container">
   <nav class="navbar navbar-inverse navbar-fixed-top">
 
     <div class="container-fluid">
@@ -205,7 +216,7 @@ h2{border-left: 2.5px solid red; padding-left: 7px;}
             </div>
     </div>
   </nav>
-</div>
+</div> -->
   <!--End of Navbar-->>
 
   <!-- MAIN (Center website) -->

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>My Project</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,11 +48,19 @@
 
 <link rel="stylesheet" type="text/css" href="css/Portfolio.css">
 
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
+<script>
+  $(function(){
+    $('#header').load('header.html');
+  });
+</script>
+</head>
 <body>
 
   <!--Navbar-->
-<div class="container">
+  <div id="header"></div>
+<!-- <div class="container">
   <nav class="navbar navbar-inverse navbar-fixed-top">
 
     <div class="container-fluid">
@@ -79,7 +88,7 @@
             </div>
     </div>
   </nav>
-</div>
+</div> -->
 <!--EndNavbar-->
 
 <h1 class="w3-center" id="top"><strong>My <span id="sec">Work</span></strong></h1>

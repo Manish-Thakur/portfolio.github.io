@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<>
 <title>My CV</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +13,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" type="text/css" href="css/cv.css">
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script>
+  $(function(){
+    $('#header').load('header.html');
+  });
+</script>
+
+</head>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: GT America;}
 
@@ -61,7 +72,8 @@ nav{font: normal 16px GT America;}
 <body class="w3-light-grey">
 
   <!--Navbar-->
-<div class="container">
+  <div id="header"></div>
+<!-- <div class="container">
   <nav class="navbar navbar-inverse navbar-fixed-top">
 
     <div class="container-fluid">
@@ -89,7 +101,7 @@ nav{font: normal 16px GT America;}
             </div>
     </div>
   </nav>
-</div>
+</div> -->
   <!--End of Navbar-->
 
 <!-- Page Container -->
