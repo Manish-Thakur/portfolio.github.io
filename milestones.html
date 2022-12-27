@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Blog</title>
+
+<link rel="stylesheet" type="text/css" href="css/blog.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+<script>
+  $(function(){
+    $('#header').load('header.html');
+  });
+</script>
+</head> -->
+<body>
+
+ <!--Navbar-->
+ <!-- <div id="header"></div> -->
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container-fluid">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                         <a href="index.html"><img id="fav" class="image" src="img/Favicon.png"></a>
+                  </div> 
+      
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="w3-center"><a href="index.html">HOME</a></li>
+                      <li class="w3-center"><a href="about.html">ABOUT</a></li> 
+                      <li class="w3-center"><a href="contact.html">CONTACT</a></li>  
+                    </ul><ul class="nav navbar-nav">
+                      <li class="w3-center"><a href="myPortfolio.html">PROJECTS</a></li>
+                      <li class="w3-center"><a href="blog.html">BLOGS</a></li>
+                      <li class="w3-center"><a href="myCV.html">RESUME</a></li>
+                      <li class="w3-center"><a href="WorkInProgress.html">MILESTONES</a></li>     
+                    </ul>
+                </div>
+        </div>
+      </nav>
+    </div>
+<!--EndNavbar-->
+ <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32"> 
+         <span id="image1"><h1><b>MY BLOG</b></h1></span>
+          <p>Welcome to the blog of       <span class="w3-tag">Manish</span></p>
+        </header>
+<!--EndHeader-->
+
+ <div class="row">
+  <div class="left-column">
+    <div class="card">
+      
+       <h3>Popular Post</h3> <hr>
+       <marquee width="100%"  height="200px" behaviour="scroll" direction="up" scrolldelay="250" onmouseover="this.stop()" onmouseout="this.start()">
+        <a href="#topic1"><p class="w3-center">1.NOT Every NE is an Enemy.</p></a>
+        <a href="#topic2"><p class="w3-center">2.StartUp India...StandUp India</p></a>
+        <a href="blog2.html"><p class="w3-center">3.Five Steps To Beat Procrastination</p></a>
+        <a href="blog2.html"><p class="w3-center">4.On Your First Job</p></a>
+        </marquee>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div class="card w3-center">
+       <h2>About Me</h2>
+       <img id="me" src="img/fifthpic.jpg" alt="me"/>
+       <p>Just me, myself and I love exploring the universe of uknownment. I have a heart of love and a interest of blogging, reading, cooking and travelling.I want to share my world with you.</p>
+    </div><br>
+
+   
+    <div class="card w3-center">
+       <h3>Popular Post</h3> <hr>
+       <marquee width="100%"  height="200px" behaviour="scroll" direction="up" scrolldelay="250" onmouseover="this.stop()" onmouseout="this.start()">
+        <a href="#topic1"><p class="w3-center">1.NOT Every NE is an Enemy.</p></a>
+        <a href="#topic2"><p class="w3-center">2.StartUp India...StandUp India</p></a>
+        <a href="blog2.html"><p class="w3-center">3.Five Steps To Beat Procrastination</p></a>
+        <a href="blog2.html"><p class="w3-center">4.On Your First Job</p></a>
+        </marquee>
+        
+        
+    </div><br>
+    <hr>
+
+    <div class="card w3-center">
+      <h4>Follow Me</h4>
+        <a  href="https://www.facebook.com/manishkt2" ><i class="fa fa-facebook-official   w3-center w3-hover-opacity w3-xlarge" id="footer"></i></a>
+        <a  href="https://twitter.com/manishthakur893" ><i class="fa fa-twitter  w3-center w3-hover-opacity w3-xlarge" id="footer"></i></a>
+        <a  href="https://www.instagram.com/call.me.manish/" ><i class="fa fa-instagram  w3-center w3-hover-opacity w3-xlarge" id="footer"></i></a>
+        <a  href="https://github.com/Manish-Thakur" ><i class="fa fa-github  w3-center w3-hover-opacity w3-xlarge" id="footer"></i></a>
+        <a  href="https://www.linkedin.com/in/manish-thakur-3666abb2" ><i class="fa fa-linkedin  w3-center w3-hover-opacity w3-xlarge" id="footer"></i></a>
+    </div>
+  </div>
+ </div>
+
+<footer>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><span id="Prev"> Previous</span></button>
+  <a href="blog2.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom"><span id="Next">Next</span></button></a>
+</footer>
+
+<!-- Note: &raquo; » double right angle quote
+&laquo; « double left angle quote -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+ <script>
+  // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+ </script>
+</body>
+</html>
