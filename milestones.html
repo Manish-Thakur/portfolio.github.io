@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Blog</title>
-
-<link rel="stylesheet" type="text/css" href="css/blog.css">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
-<script>
-  $(function(){
-    $('#header').load('header.html');
-  });
-</script>
-</head> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Milestones</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/milestone.css">
+  <script src="js/milestone.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
 <body>
-
  <!--Navbar-->
  <!-- <div id="header"></div> -->
     <div class="container">
@@ -32,21 +26,23 @@
                             <span class="icon-bar"></span>
                          </button>
                          <a href="index.html"><img id="fav" class="image" src="img/Favicon.png"></a>
-                  </div> 
-      
+                  </div>
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                       <li class="w3-center"><a href="index.html">HOME</a></li>
-                      <li class="w3-center"><a href="about.html">ABOUT</a></li> 
-                      <li class="w3-center"><a href="contact.html">CONTACT</a></li>  
+                      <li class="w3-center"><a href="about.html">ABOUT</a></li>
+                      <li class="w3-center"><a href="contact.html">CONTACT</a></li>
                     </ul>
                     <ul class="nav navbar-nav">
                       <li class="w3-center"><a href="myPortfolio.html">PROJECTS</a></li>
                       <li class="w3-center"><a href="blog.html">BLOGS</a></li>
                       <li class="w3-center"><a href="myCV.html">RESUME</a></li>
-                      <li class="w3-center"><a href="WorkInProgress.html">MILESTONES</a></li>     
+                      <li class="w3-center"><a href="milestones.html">MILESTONES</a></li>
                     </ul>
-                </div>
+                    <ul class="nav navbar-nav">
+                      <li class="w3-center"><span><i class="bi bi-brightness-high-fill" id="toggleDark"></i></span></li>
+                    </ul>
+                  </div>
         </div>
       </nav>
     </div>
@@ -56,7 +52,7 @@
  <div class="row">
   <div class="left-column">
     <div class="card w3-center">
-       <h3>Popular Milestones</h3> <hr>
+       <h3 class="dark">Popular Milestones</h3><br>
        <marquee width="100%"  height="200px" behaviour="scroll" direction="up" scrolldelay="250" onmouseover="this.stop()" onmouseout="this.start()">
         <a href=""><p class="w3-center">1993 - Born on Earth!!.</p></a>
         <a href=""><p class="w3-center">2006 - Secured First Position consistently till Board Exam</p></a>
@@ -72,46 +68,8 @@
       </div>
     </div>
   </div> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></scrip>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
- <script>
-  // Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 800, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
- </script>
 </body>
 </html>
